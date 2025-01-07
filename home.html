@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Home - Scope</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="images/logo3.png" alt="Logo">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="home.html" class="link active">Home</a></li>
+                    <li><a href="games.html" class="link">Games</a></li>
+                    <li><a href="friends.html" class="link">Friends</a></li>
+                    <li><a href="about.html" class="link">About</a></li>
+                    <li><a href="profile.html" class="link"><i class='bx bxs-user-circle' style="font-size: 30px;"></i></a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn" id="loginBtn" onclick="login()">Log In</button>
+                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+        </nav>
+
+        <div class="home-container">
+            <h1>Welcome to Scope!</h1>
+            <p>Find your team and start gaming.</p>
+            
+            <div class="home-button">
+                <button class="btn" id="createTeamBtn" onclick="createTeam()">Create Team</button>
+                <button class="btn" id="joinTeamBtn" onclick="joinTeam()">Join Team</button>
+            </div>    
+        </div>
+    </div>
+
+    <footer><p>&copy; 2024 Scope</p></footer>
+
+    <script>
+        function login() {
+            window.location.href = 'login.html'; 
+        }
+
+        function register() {
+            window.location.href = 'register.html'; 
+        }
+
+        const links = document.querySelectorAll('.nav-menu .link');
+        links.forEach(function(link) {
+            if (window.location.href.includes(link.getAttribute('href'))) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
