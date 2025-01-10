@@ -16,6 +16,7 @@ body {
 }
 
 .wrapper {
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,7 +122,11 @@ p {
 .active {
     border-bottom: 2px solid #fff;
 }
-
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
 .nav-button .btn {
     width: 130px;
     height: 40px;
@@ -265,68 +270,13 @@ header {
 .two label a:hover {
     text-decoration: underline;
 }
-
-/* Carousel Styles */
-.carousel {
-    position: relative;
-    overflow: hidden;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 30px; /* Add space between text and carousel */
+.two {
+    margin-top: 5px;
+    margin-left: 150px;
+   
 }
-
-.carousel-container {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
-.carousel-item {
-    flex: 0 0 33.33%; /* Show 3 items */
-    max-width: 33.33%;
-    margin: 0 10px;
-    display: flex;
-    justify-content: center;
-    transition: transform 0.3s ease;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.carousel-item.center img {
-    transform: scale(1.1); /* Make the center image larger */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow to the center image */
-}
-
-.carousel-controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-
-.carousel-prev,
-.carousel-next {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 30px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-}
-
-.carousel-prev:hover,
-.carousel-next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.two a{
+    font-size: 10px;
 }
 
 .profile-content {
@@ -369,6 +319,8 @@ footer {
     background-color: #f1d7d8; 
     color: #a06470;
 }
+
+
 
 @media only screen and (max-width: 786px) {
     .nav-button {
@@ -414,3 +366,193 @@ footer {
         background: rgba(255, 255, 255, 0.15);
     }
 }
+/*** Search Bar Styles ***/
+.search-bar{
+    --padding: 14px;
+    /* width:max-content; */
+    width: 40px;
+    height: 40px;
+    font-weight: 500;
+    display: flex;
+    align-items:center;
+    padding:var(--padding);
+    border-radius: 30px;
+    color: white;
+    overflow: hidden;
+    cursor:pointer;
+   
+       
+   
+}
+
+.search-input{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color:white ;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 0; 
+    transition: width 0.3s ease; 
+    opacity: 0; 
+}
+.search-input::placeholder
+{
+    color:rgba(0,0,0,0.3);
+}
+#searchIcon{
+    font-size: 20px;
+    cursor: pointer;
+}
+.search-bar.active{
+    width: max-content;
+    background: #a06470;
+    border: none;
+}
+.search-bar.active .search-input{
+    width:max-content;
+    background: #a06470;
+    opacity: 1;
+    border: none;
+    outline: none;
+    transition: background  0.25s;
+    background: transparent;
+}
+.search-bar.active:focus-within{
+    background:  #d4847a;
+}
+.search-bar.active .search-input:focus-within{
+    background:  #d4847a;
+}
+
+/***Games slider styles***/
+.card-wrapper{
+    max-width: 1300px ;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    transition: 0.2s ease;
+    
+}
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+}
+.card-list .card-item .card-link:hover{
+    border-color: #a06470;
+}
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 15px;
+    
+}
+.card-list .card-item:hover{
+    transform: scale(1.1);
+}
+.card-list .card-link .card-button{
+    height: 35px;
+    width:  35px;
+    color:#a06470;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #a06470;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+.card-list .card-link:hover .card-button{
+    color: white;
+    background:#a06470;
+}
+
+.card-wrapper .swiper-pagination-bullet{
+    height:13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #a06470;
+  }
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity:1;
+
+  }
+.card-wrapper .swiper-slide-button{
+    color: #a06470;
+    margin-top: -35px;
+  }
+
+@media screen and (max-width: 768px){
+    .card-wrapper{
+        margin: 0 10px 25px ;
+    }
+    .card-wrapper .swiper-slide-button{
+        display: none;
+
+    }
+}
+
+
+/***friends page styles***/
+
+.page-content{
+    width:500px;
+    height:400px;
+    margin: 0 auto;
+    background-color: #a06470;
+    border-radius: 30px;
+}
+h2{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 35px;
+    color:#a06470;
+
+}
+.header{
+    margin-top: 30px;
+    
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 30px;
+}
+.friends-button {
+    background-color: #d4847a; /* matches the header background color */
+    border: none; /* remove default button border */
+    padding: 10px 30px; /* add some padding */
+    border-radius: 30px; /* rounded corners */
+    cursor: pointer; /* indicate clickable button */
+    transition: background-color 0.2s ease; /* smooth hover effect */
+  }
+  
+  .friends-button:hover
+   {
+    transform: scale(1.1);
+  }
+  
+  .friends-button ion-icon {
+    font-size: 20px; /* adjust icon size */
+    color: #fff; /* white color for icons */
+  }
+  .friends-button {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }

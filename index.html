@@ -19,10 +19,16 @@
                     <li><a href="games.html" class="link">Games</a></li>
                     <li><a href="friends.html" class="link">Friends</a></li>
                     <li><a href="about.html" class="link">About Us</a></li>
-                    <li><a href="profile.html" class="link">My Account</a></li>
+                    <li><a href="profile.html" class="link"><i class='bx bxs-user-circle' ></i></a></li>
                 </ul>
             </div>
             <div class="nav-button">
+                <form>
+                    <div class="search-bar" id="searchForm">
+                        <i class='bx bx-search' id="searchIcon"></i>
+                        <input class="search-input" type="search" placeholder="Search..." id="searchInput">
+                    </div>
+                </form>
                 <button class="btn" id="loginBtn" onclick="login()">Log In</button>
                 <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
             </div>
@@ -155,5 +161,6 @@
             }
         });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

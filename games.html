@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gamesStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <title>Games - Scope</title>
 </head>
 <body>
@@ -22,6 +27,12 @@
                 </ul>
             </div>
             <div class="nav-button">
+                <form>
+                    <div class="search-bar" id="searchForm">
+                        <i class='bx bx-search' id="searchIcon"></i>
+                        <input class="search-input" type="search" placeholder="Search..." id="searchInput">
+                    </div>
+                </form>
                 <button class="btn" id="loginBtn" onclick="login()">Log In</button>
                 <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
             </div>
@@ -31,20 +42,97 @@
             <h2>Join/Create teams for:</h2>
         </div>
 
-        <div class="carousel">
-            <div class="carousel-container">
-                <div class="carousel-item">
-                    <img src="images/tf2.jpg" alt="Game 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/lol.jpg" alt="Game 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/cs2.jpg" alt="Game 3">
-                </div>
-                <!-- Add more games here -->
+        <div class="select-box">
+            <div class="select-option">
+                <input type = "text" placeholder="Select" id= "soValue" readonly name="">
+
             </div>
+            <div class="content">
+                <div class="search">
+                    <input type="text" placeholder="Search" id="optionSearch" name="">
+
+                </div>
+                <ul class="options">
+                    <li>Action</li>
+                    <li>Social simulation</li>
+                    <li>RPG</li>
+                    <li>Survival</li>
+                    <li>Shooter</li>
+                    <li>Sports games</li>
+                    <li>Battle Royale</li>
+                    <li>Multiplayer</li>
+                    <li>Single-player</li>
+                </ul>
+            </div>
+            
         </div>
+        <div class="container swiper">
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link"><img src="images/tf2.jpg" alt="Game 1" class="card-image">
+                            
+                                <h3>Team Fortress 2</h3>
+                                <div class="buttons-container">
+                                <button class="card-button carousel-arrow-right" id="nextBtn"><i class='bx bx-chevron-right' ></i></button>
+                                <button class="heart-button"><i class='bx bx-heart'></i></button>
+                                </div>
+                           </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link" ><img src="images/lol.jpg" alt="Game 2" class="card-image">
+                           
+                                <h3>League Of Legends</h3>
+                                <div class="buttons-container">
+                                <button class="card-button carousel-arrow-right" id="nextBtn"><i class='bx bx-chevron-right' ></i></button>
+                                <button class="heart-button"><i class='bx bx-heart'></i></button>
+                                </div>
+                           
+                </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link"><img src="images/cs2.jpg" alt="Game 3" class="card-image ">
+                            <h3>Counter Strike 2</h3>
+                                <div class="buttons-container">
+                                    <button class="card-button carousel-arrow-right" id="nextBtn"><i class='bx bx-chevron-right' ></i></button>
+                                    <button class="heart-button"><i class='bx bx-heart'></i></button>
+                                </div>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link"><img src="images/CallOfDutyW.jpg" alt="Game 4" class="card-image ">
+                            <h3>Call Of Duty: Warzone</h3>
+                            <div class="buttons-container">
+                                <button class="card-button carousel-arrow-right" id="nextBtn"><i class='bx bx-chevron-right' ></i></button>
+                                <button class="heart-button"><i class='bx bx-heart'></i></button>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link"><img src="images/Sims4.jpg" alt="Game 5" class="card-image ">
+                            <h3>The Sims4</h3>
+                            <div class="buttons-container">
+                                <button class="card-button carousel-arrow-right" id="nextBtn"><i class='bx bx-chevron-right' ></i></button>
+                                <button class="heart-button"><i class='bx bx-heart'></i></button>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link"><img src="images/DeltaForce.jpg" alt="Game 6" class="card-image ">
+                            <h3>Delta Force</h3>
+                            <div class="buttons-container">
+                                <button class="card-button carousel-arrow-right" id="nextBtn"><i class='bx bx-chevron-right' ></i></button>
+                                <button class="heart-button"><i class='bx bx-heart'></i></button>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+
+            </div>
+           </div>
 
     </div>
 
@@ -68,5 +156,9 @@
             }
         });
     </script>
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>

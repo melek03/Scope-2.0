@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Edit Profile</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="images/logo3.png" alt="logo">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="home.html" class="link">Home</a></li>
+                    <li><a href="games.html" class="link">Games</a></li>
+                    <li><a href="friends.html" class="link">Friends</a></li>
+                    <li><a href="about.html" class="link">About Us</a></li>
+                    <li><a href="profile.html" class="link active"><i class='bx bxs-user-circle' style="font-size: 30px;"></i></a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <form>
+                    <div class="search-bar" id="searchForm">
+                        <i class='bx bx-search' id="searchIcon"></i>
+                        <input class="search-input" type="search" placeholder="Search..." id="searchInput">
+                    </div>
+                </form>
+                
+            </div>
+           
+        </nav>
+
+        <div class="form-box">
+         
+
+            <!-- Edit- Form -->
+            <div class="edit-container" id="edit">
+                <div class="top">
+                    
+                    <header>Edit Profile</header>
+                </div>
+                <form action="" method="POST">
+                   
+                    <div class="input-box">
+                        <input type="email" name="email" class="input-field" placeholder="Email" required>
+                        <i class="bx bx-envelope"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="password" class="input-field" placeholder="Password" required>
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" class="submit" value="Update">
+                    </div>
+                    
+                        <div class="two">
+                            <label><a href="#">Terms & conditions</a></label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer><p>&copy; 2024 Scope</p></footer>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

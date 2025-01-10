@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="userprofilestyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>User profile - Scope</title>
 </head>
@@ -17,11 +18,26 @@
                     <li><a href="home.html" class="link">Home</a></li>
                     <li><a href="games.html" class="link">Games</a></li>
                     <li><a href="friends.html" class="link">Friends</a></li>
-                    <li><a href="about.html" class="link active">About</a></li>
-                    <li><a href="profile.html" class="link"><ion-icon name="person-circle-outline"></ion-icon></a></li>
+                    <li><a href="about.html" class="link">About</a></li>
+                    <li><a href="profile.html" class="link active"><i class='bx bxs-user-circle' style="font-size: 30px;"></i></a></li>
                 </ul>
             </div>
         </nav>
+
+        <div class="profile-content">
+            <div class="profile-header">
+                <i class='bx bx-user' id="profile-icon"></i>
+                <div class="profile-info">
+                    <h2>Username</h2>
+                    <button class="edit-button"><a href="editProfile.html">Edit Profile</a></button>
+                  </div>
+                </div>
+            <div class="profile-tabs">
+                <button class="tab-button">Favourite Games</button>
+                <button class="tab-button">My Friends</button>
+            </div>
+              
+       
         <!-- User content goes here -->
         <footer><p>&copy; 2024 Scope</p></footer>
     </div>

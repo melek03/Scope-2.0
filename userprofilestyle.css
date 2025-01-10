@@ -1,0 +1,113 @@
+body{
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative; 
+}
+
+.profile-content{
+    width: 800px;
+    height: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.profile-header{
+    
+    margin-bottom: 20px;
+    padding: 30px;
+
+
+}
+
+#profile-icon{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: #f1d7d8;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #a06470;
+    
+}
+.profile-info {
+    text-align: center;
+  }
+.profile-info h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #a06470;
+  }
+  /*#d4847a*/
+.edit-button {
+
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: #a06470;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+    color: white;
+    
+   
+  }
+  .edit-button a{
+    text-decoration: none;
+    color:white;
+  }
+  .edit-button:hover {
+    background: #d4847a;
+}
+/* #edit-icon{
+    color:#a06470;
+    margin-right: 10px;
+    align-items: center;
+    font-size: 20px;
+} */
+
+ 
+.profile-tabs{
+   
+    width: 300px;
+    height: 40px;
+    font-weight: 500;
+    background: #a06470;
+    border: none;
+    border-radius: 30px;
+     
+   
+}
+.profile-tabs .tab-button {
+
+    background-color: #a06470;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .3s ease;
+  
+  }
+  .tab-button:hover{
+    background: #d4847a;
+  }
+  /* .tab-button.active {
+    background-color: #007bff;
+  } */
+
+  .wrapper{
+    flex: 1 0 auto;
+
+  }
+  footer {
+    background-color: #f1d7d8; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+}

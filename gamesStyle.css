@@ -1,0 +1,131 @@
+/** Games Filter styles**/
+.wrapper{
+    max-width: 85%;
+    margin: 0 auto;
+}
+.join-create-teams {
+    margin-top: 100px; /* Adjust for visibility */ /* Align to the left */
+    font-size: 22px; /* Ensure the font size is clear */
+    color: #a06470; /* Match color with the theme */
+    font-weight: bold;
+    padding: 0 20px;
+}
+/* .select-box{
+    margin-top: 100px;
+    width:380px;
+    position: relative;
+    margin-left: 20px;
+    
+   
+} */
+.select-box {
+    position: absolute;
+    top: 150px;
+    left: 20px; /* Adjust left value as needed */
+    width: 380px;
+    z-index: 999; /* Ensure it's above the carousel */
+  }
+  
+
+.select-option {
+    position:relative;
+    margin-bottom: 50px;
+    color:white;
+
+}
+.select-option input{
+
+    width:100%;
+    background-color:#a06470;
+    color:white;
+    border-radius: 30px;
+    cursor:pointer;
+    font-size: 22px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+
+}
+.select-option:after{
+    content: "";
+    border-top: 12px solid #000;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -8px;
+}
+.content {
+    background-color: #a06470;
+    position: absolute;
+    color: white;
+    border-radius: 30px;
+    margin-top: 15px;
+    width: 100%;
+    z-index: 999;
+    padding: 20px;
+    display: none;
+}
+.search input{
+    width: 100%;
+    font-size:17px;
+    padding: 15px;
+    outline: 0;
+    border:1px solid #d4847a;
+    border-radius: 30px;
+    background-color: #f1d7d8;
+    color: #a06470;
+    
+}
+.options{
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.options li{
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 21px;
+    cursor:pointer;
+    border-bottom: 1px solid #d4847a;
+}
+.options li:hover{
+    background-color: #d4847a;
+}
+.select-box.active .content{
+    display: block;
+}
+.select-box.active .select-option:after{
+    transform:rotate(-180deg);
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    
+}
+/* Styling the heart button */
+.heart-button {
+    background: transparent;
+    background-attachment:#f1d7d8;
+    border: none;
+    cursor: pointer;
+    font-size: 35px;
+    color: #a06470; /* Unfilled heart color */
+    margin-left: auto; /* Push the heart button to the far right */
+    
+}
+/* Heart button when filled */
+.heart-button.active i {
+    color: #a06470; 
+}
+
+.card-item h3{
+    color: #a06470;
+}
