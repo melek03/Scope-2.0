@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Team - page</title>
+    <link rel="stylesheet" href="TeamsStyle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="images/logo3.png" alt="Logo">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="home.html" class="link active">Home</a></li>
+                    <li><a href="games.html" class="link">Games</a></li>
+                    <li><a href="friends.html" class="link">Friends</a></li>
+                    <li><a href="about.html" class="link">About</a></li>
+                    <li><a href="profile.html" class="link"><i class='bx bxs-user-circle' style="font-size: 30px;"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="create-container">
+            <h2>Create a New Team</h2>
+            <form id="create-team-form">
+                <label for="team-name">Team Name:</label>
+                <input type="text" id="team-name" name="team-name" placeholder="Enter your team name" required>
+
+                <label for="description">Team Description:</label>
+                <textarea id="description" name="description" rows="4" placeholder="Describe your team (optional)"></textarea>
+
+                <label for="team-logo">Team Logo:</label>
+                <input type="file" id="team-logo" name="team-logo" alt="team image" accept="image/*">
+
+                <button type="submit">Create Team</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
