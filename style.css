@@ -316,8 +316,11 @@ header {
 /* Footer Styles */
 footer {
     text-align: center;
-    background-color: #f1d7d8; 
+    position: sticky;
     color: #a06470;
+    flex-shrink: 0; 
+    margin-top: 30px;
+    
 }
 
 
@@ -429,10 +432,11 @@ footer {
 /***Games slider styles***/
 .card-wrapper{
     max-width: 1300px ;
-    margin: 0 60px 35px;
+    margin: 0 60px 40px;
     padding: 20px 10px;
     overflow: hidden;
 }
+
 .card-list .card-item{
     list-style: none;
 }
@@ -451,9 +455,9 @@ footer {
 .card-list .card-item .card-link:active{
     cursor: grabbing;
 }
-.card-list .card-item .card-link:hover{
+/* .card-list .card-item .card-link:hover{
     border-color: #a06470;
-}
+}  */
 .card-list .card-link .card-image{
     width: 100%;
     aspect-ratio: 16/9;
@@ -463,6 +467,7 @@ footer {
 }
 .card-list .card-item:hover{
     transform: scale(1.1);
+    
 }
 .card-list .card-link .card-button{
     height: 35px;

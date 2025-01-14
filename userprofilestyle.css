@@ -12,6 +12,7 @@ body{
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+    cursor: pointer;
 }
 .profile-header{
     
@@ -111,3 +112,4 @@ body{
     right: 0;
     padding: 10px 0;
 }
+

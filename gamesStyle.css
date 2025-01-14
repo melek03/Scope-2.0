@@ -4,9 +4,9 @@
     margin: 0 auto;
 }
 .join-create-teams {
-    margin-top: 100px; /* Adjust for visibility */ /* Align to the left */
-    font-size: 22px; /* Ensure the font size is clear */
-    color: #a06470; /* Match color with the theme */
+    margin-top: 100px; 
+    font-size: 22px; 
+    color: #a06470; 
     font-weight: bold;
     padding: 0 20px;
 }
@@ -19,11 +19,11 @@
    
 } */
 .select-box {
-    position: absolute;
+    position:absolute;
     top: 150px;
-    left: 20px; /* Adjust left value as needed */
+    left: 20px; 
     width: 380px;
-    z-index: 999; /* Ensure it's above the carousel */
+    z-index: 999; 
   }
   
 
@@ -128,4 +128,63 @@
 
 .card-item h3{
     color: #a06470;
+}
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .join-create-teams {
+        font-size: 18px;
+    }
+    .select-box {
+        position: relative;
+        top: 20px;
+        left: 0;
+        width: 100%;
+    }
+    .select-option input {
+        font-size: 18px;
+    }
+    .content {
+        font-size: 16px;
+    }
+    .options li {
+        font-size: 18px;
+    }
+    .card-item h3 {
+        font-size: 16px;
+    }
+    .heart-button {
+        font-size: 28px;
+    }
+}
+
+/* For tablets (portrait and landscape) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .select-box {
+        width: 300px;
+        top: 30px;
+    }
+    .select-option input {
+        font-size: 20px;
+    }
+    .content {
+        font-size: 18px;
+    }
+    .options li {
+        font-size: 20px;
+    }
+    .card-item h3 {
+        font-size: 18px;
+    }
+    .heart-button {
+        font-size: 30px;
+    }
 }
