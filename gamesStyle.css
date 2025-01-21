@@ -1,52 +1,48 @@
-/** Games Filter styles**/
-.wrapper{
-    max-width: 85%;
-    margin: 0 auto;
+/** Games Filter styles **/
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
 }
+
 .join-create-teams {
-    margin-top: 100px; 
-    font-size: 22px; 
-    color: #a06470; 
+    margin-top: 100px;
+    font-size: 22px;
+    color: #a06470;
     font-weight: bold;
     padding: 0 20px;
 }
-/* .select-box{
-    margin-top: 100px;
-    width:380px;
-    position: relative;
-    margin-left: 20px;
-    
-   
-} */
+
+
 .select-box {
-    position:absolute;
+    position: absolute;
     top: 150px;
-    left: 20px; 
+    left: 20px;
     width: 380px;
-    z-index: 999; 
-  }
-  
+    z-index: 999;
+}
 
 .select-option {
-    position:relative;
+    position: relative;
     margin-bottom: 50px;
-    color:white;
-
+    color: white;
 }
-.select-option input{
 
-    width:100%;
-    background-color:#a06470;
-    color:white;
+.select-option input {
+    width: 100%;
+    background-color: #a06470;
+    color: white;
     border-radius: 30px;
-    cursor:pointer;
+    cursor: pointer;
     font-size: 22px;
     padding: 15px 20px;
     border: none;
     outline: none;
-
 }
-.select-option:after{
+
+.select-option:after {
     content: "";
     border-top: 12px solid #000;
     border-left: 8px solid transparent;
@@ -56,6 +52,7 @@
     top: 50%;
     margin-top: -8px;
 }
+
 .content {
     background-color: #a06470;
     position: absolute;
@@ -67,18 +64,19 @@
     padding: 20px;
     display: none;
 }
-.search input{
+
+.search input {
     width: 100%;
-    font-size:17px;
+    font-size: 17px;
     padding: 15px;
     outline: 0;
-    border:1px solid #d4847a;
+    border: 1px solid #d4847a;
     border-radius: 30px;
     background-color: #f1d7d8;
     color: #a06470;
-    
 }
-.options{
+
+.options {
     margin-top: 10px;
     max-height: 250px;
     overflow-y: auto;
@@ -86,105 +84,93 @@
     text-decoration: none;
     list-style: none;
 }
-.options li{
+
+.options li {
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 21px;
-    cursor:pointer;
+    cursor: pointer;
     border-bottom: 1px solid #d4847a;
 }
-.options li:hover{
+
+.options li:hover {
     background-color: #d4847a;
 }
-.select-box.active .content{
+
+.select-box.active .content {
     display: block;
 }
-.select-box.active .select-option:after{
-    transform:rotate(-180deg);
+
+.select-box.active .select-option:after {
+    transform: rotate(-180deg);
 }
 
-.buttons-container{
+.buttons-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
-    
 }
+
 /* Styling the heart button */
 .heart-button {
     background: transparent;
-    background-attachment:#f1d7d8;
+    background-attachment: #f1d7d8;
     border: none;
     cursor: pointer;
     font-size: 35px;
     color: #a06470; /* Unfilled heart color */
     margin-left: auto; /* Push the heart button to the far right */
-    
-}
-/* Heart button when filled */
-.heart-button.active i {
-    color: #a06470; 
 }
 
-.card-item h3{
+/* Heart button when filled */
+.heart-button.active i {
     color: #a06470;
 }
 
-
-@media (max-width: 768px) {
-    .wrapper {
-        max-width: 100%;
-        padding: 0 15px;
-    }
-    .join-create-teams {
-        font-size: 18px;
-    }
-    .select-box {
-        position: relative;
-        top: 20px;
-        left: 0;
-        width: 100%;
-    }
-    .select-option input {
-        font-size: 18px;
-    }
-    .content {
-        font-size: 16px;
-    }
-    .options li {
-        font-size: 18px;
-    }
-    .card-item h3 {
-        font-size: 16px;
-    }
-    .heart-button {
-        font-size: 28px;
-    }
+.card-item h3 {
+    color: #a06470;
 }
 
-/* For tablets (portrait and landscape) */
-@media (max-width: 1024px) and (min-width: 769px) {
-    .wrapper {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-    .select-box {
-        width: 300px;
-        top: 30px;
-    }
-    .select-option input {
-        font-size: 20px;
-    }
-    .content {
-        font-size: 18px;
-    }
-    .options li {
-        font-size: 20px;
-    }
-    .card-item h3 {
-        font-size: 18px;
-    }
-    .heart-button {
-        font-size: 30px;
-    }
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.swiper-button-prev {
+    left: -40px; 
+}
+
+.swiper-button-next {
+    right: -40px; 
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.swiper {
+    padding-left: 40px; 
+    padding-right: 40px; 
+}
+
+/* Styling the heart button */
+.heart-button {
+    background: transparent;
+    background-attachment: #f1d7d8;
+    border: none;
+    cursor: pointer;
+    font-size: 35px;
+    color: #a06470; /* Unfilled heart color */
+    margin-left: auto; /* Push the heart button to the far right */
+}
+
+/* Heart button when filled */
+.heart-button.active i {
+    color: #a06470; /* Color change when active */
 }

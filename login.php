@@ -1,6 +1,6 @@
 <?php
 require 'db.php';
-session_start();  // Start the session to store user data
+session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($user && password_verify($password, $user['password'])) {
             // Store user info in session after successful login
-            $_SESSION['user_id'] = $user['id'];  // Assuming 'id' is the primary key in your users table
+            $_SESSION['user_id'] = $user['user_id'];  // Assuming 'user_id' is the primary key in your users table
             $_SESSION['user_name'] = $user['firstname'] . ' ' . $user['lastname'];
             $_SESSION['user_email'] = $user['email'];
 

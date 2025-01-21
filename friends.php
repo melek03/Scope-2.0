@@ -1,3 +1,8 @@
+<?php
+include 'db.php'; // Include the DB connection
+include 'navbar.php'; // Include the navbar (session check and login/logout logic)
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,20 +13,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <nav class="nav">
-            <div class="nav-logo">
-                <img src="images/logo3.png" alt="Logo">
-            </div>
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="home.html" class="link">Home</a></li>
-                    <li><a href="games.html" class="link">Games</a></li>
-                    <li><a href="friends.html" class="link active">Friends</a></li>
-                    <li><a href="about.html" class="link">About</a></li>
-                    <li><a href="profile.html" class="link"><i class='bx bxs-user-circle' style="font-size: 30px;"></i></a></li>
-                </ul>
-            </div>
-        </nav>
+        
         <h2>Friends Page</h2>
         <div class="page-content">
             <div class="header">

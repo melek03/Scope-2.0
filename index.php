@@ -1,3 +1,8 @@
+<?php
+include 'db.php'; // Include the DB connection
+include 'navbar.php'; // Include the navbar (session check and login/logout logic)
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,33 +14,6 @@
 </head>
 <body>
     <div class="wrapper">
-        <nav class="nav">
-            <div class="nav-logo">
-                <img src="images/logo3.png" alt="logo">
-            </div>
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="home.html" class="link active">Home</a></li>
-                    <li><a href="games.html" class="link">Games</a></li>
-                    <li><a href="friends.html" class="link">Friends</a></li>
-                    <li><a href="about.html" class="link">About Us</a></li>
-                    <li><a href="profile.html" class="link"><i class='bx bxs-user-circle' style="font-size: 30px;"></i></a></li>
-                </ul>
-            </div>
-            <div class="nav-button">
-                <form>
-                    <div class="search-bar" id="searchForm">
-                        <i class='bx bx-search' id="searchIcon"></i>
-                        <input class="search-input" type="search" placeholder="Search..." id="searchInput">
-                    </div>
-                </form>
-                <button class="btn" id="loginBtn" onclick="login()">Log In</button>
-                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
-            </div>
-            <div class="nav-menu-btn">
-                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
-            </div>
-        </nav>
 
         <div class="form-box">
             <!-- Login Form -->
